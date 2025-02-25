@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  perspective: 1000px;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(
+    0deg,
+    rgb(135, 121, 156),
+    rgb(88, 59, 116),
+    rgb(51, 34, 68),
+    rgb(20, 5, 34)
+  );
+  color: #f9f9f9;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  width: 750px;
+  height: 480px;
+  transition: 0.5s;
+  color: black;
+  border: 1em solid transparent;
+  background: linear-gradient(white, white) padding-box,
+    repeating-linear-gradient(
+        -45deg,
+        #fa81b6 0,
+        #fa81b6 12.5%,
+        transparent 0,
+        transparent 25%,
+        #7eb4e2 0,
+        #7eb4e2 37.5%,
+        transparent 0,
+        transparent 50%
+      )
+      0 / 5em 5em;
+}
+
+.card p {
+  font-weight: bold;
+  text-align: justify;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.card div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+p#nama,
+p#message,
+p#note {
+  font-weight: bold;
+  font-family: 'Charm', sans-serif;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:active {
+  transform: translateY(2px);
+}
+
+@media (max-width: 768px) {
+  .card {
+    margin: auto;
+    width: 80%;
+    padding: 15px;
+    overflow: auto;
+  }
+}
+
+@media (max-height: 720px) {
+  .card {
+    margin: auto;
+    width: 50%;
+    height: 80%;
+  }
+}
