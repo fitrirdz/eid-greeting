@@ -1,4 +1,5 @@
 import '@/styles/home.css';
+import '@/styles/message.css';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
 
