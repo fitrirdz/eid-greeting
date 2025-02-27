@@ -1,4 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react';
+import {  Caveat } from 'next/font/google';
+
+const caveat = Caveat({
+  weight: '400',
+  variable: '--font-caveat',
+  subsets: ['latin'],
+});
 
 const Message = () => {
   const cardRef = useRef<HTMLDivElement>(null);
@@ -50,7 +57,7 @@ const Message = () => {
 
         setMessageData({
           destination: `To: ${name}`,
-          nama: `Hi ${name},`,
+          nama: `Dear ${name},`,
           message: json[id].message,
           note: json[id].note,
         });
@@ -63,19 +70,21 @@ const Message = () => {
   }, []);
 
   return (
-    <div
-      ref={cardRef}
-      className='card'
-      onMouseMove={onMouseMove}
-      onMouseLeave={onMouseLeave}
-    >
-      <p>{messageData.destination}</p>
-      <div>
-        <p>{messageData.nama}</p>
-        <p>{messageData.message}</p>
-        <p>{messageData.note}</p>
+    <div className={`container-message ${caveat.variable}`}>
+      <div
+        ref={cardRef}
+        className='card'
+        onMouseMove={onMouseMove}
+        onMouseLeave={onMouseLeave}
+      >
+        <p>{messageData.destination}</p>
+        <div>
+          <p>{messageData.nama}</p>
+          <p>{messageData.message}</p>
+          <p>{messageData.note}</p>
+        </div>
+        <p>From: Fitri Ratna Dewi</p>
       </div>
-      <p>From: Fitri Ratna Dewi</p>
     </div>
   );
 };
