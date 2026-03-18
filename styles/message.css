@@ -117,3 +117,15 @@ button:active {
     height: 80%;
   }
 }
+
+@media (max-width: 480px) {
+  .card {
+    width: 90%;
+    height: auto;
+    min-height: 320px;
+  }
+
+  .card p {
+    font-size: 1.2em;
+  }
+}

@@ -141,7 +141,8 @@ body.theme-rose .container {
   position: relative;
 }
 
-.login .input-box input {
+.login .input-box input,
+.login .input-box select {
   font-family: serif;
   position: relative;
   width: 100%;
@@ -239,6 +240,34 @@ body.theme-rose .login .input-box #btn {
   }
   100% {
     transform: translateY(0%);
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  section {
+    align-items: flex-start;
+  }
+
+  .login {
+    margin-top: 40px;
+    width: 90%;
+    padding: 24px 20px;
+    gap: 16px;
+  }
+
+  .login h2 {
+    font-size: 1.6em;
+  }
+
+  .login p {
+    font-size: 0.75em;
+  }
+
+  .login .input-box input,
+  .login .input-box select {
+    padding: 12px 16px;
+    font-size: 0.95em;
   }
 }
 

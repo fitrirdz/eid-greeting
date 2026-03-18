@@ -67,7 +67,7 @@ export default function Home() {
             />
           </div>
           <div className='input-box'>
-            <label htmlFor='feeling'>How is your feeling today?</label>
+            <label htmlFor='feeling'>How are you feeling today?</label>
             <select id='feeling' defaultValue=''>
               <option value='' disabled>
                 Choose your feeling...
