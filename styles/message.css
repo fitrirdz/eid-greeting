@@ -10,6 +10,12 @@
   perspective: 1000px;
   margin: 0;
   padding: 0;
+  color: #f9f9f9;
+  font-family: 'Caveat', sans-serif;
+}
+
+/* Theme variants matching the home page gradients */
+body.theme-purple .container-message {
   background: linear-gradient(
     0deg,
     rgb(135, 121, 156),
@@ -17,8 +23,36 @@
     rgb(51, 34, 68),
     rgb(20, 5, 34)
   );
-  color: #f9f9f9;
-  font-family: 'Caveat', sans-serif;
+}
+
+body.theme-teal .container-message {
+  background: linear-gradient(
+    0deg,
+    rgb(116, 199, 196),
+    rgb(52, 160, 164),
+    rgb(15, 90, 110),
+    rgb(5, 40, 60)
+  );
+}
+
+body.theme-gold .container-message {
+  background: linear-gradient(
+    0deg,
+    rgb(242, 205, 139),
+    rgb(219, 163, 79),
+    rgb(150, 104, 39),
+    rgb(76, 52, 22)
+  );
+}
+
+body.theme-rose .container-message {
+  background: linear-gradient(
+    0deg,
+    rgb(247, 178, 193),
+    rgb(223, 122, 160),
+    rgb(162, 70, 125),
+    rgb(93, 33, 78)
+  );
 }
 
 .card {

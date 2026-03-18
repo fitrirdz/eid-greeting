@@ -30,6 +30,47 @@ section {
   background-repeat: no-repeat;
 }
 
+/* Theme variants for background gradients */
+body.theme-purple .container {
+  background: linear-gradient(
+    0deg,
+    rgb(135, 121, 156),
+    rgb(88, 59, 116),
+    rgb(51, 34, 68),
+    rgb(20, 5, 34)
+  );
+}
+
+body.theme-teal .container {
+  background: linear-gradient(
+    0deg,
+    rgb(116, 199, 196),
+    rgb(52, 160, 164),
+    rgb(15, 90, 110),
+    rgb(5, 40, 60)
+  );
+}
+
+body.theme-gold .container {
+  background: linear-gradient(
+    0deg,
+    rgb(242, 205, 139),
+    rgb(219, 163, 79),
+    rgb(150, 104, 39),
+    rgb(76, 52, 22)
+  );
+}
+
+body.theme-rose .container {
+  background: linear-gradient(
+    0deg,
+    rgb(247, 178, 193),
+    rgb(223, 122, 160),
+    rgb(162, 70, 125),
+    rgb(93, 33, 78)
+  );
+}
+
 .moon {
   position: absolute;
   top: 15%;
@@ -151,6 +192,36 @@ input::placeholder {
     rgb(88, 59, 116),
     rgb(51, 34, 68),
     rgb(20, 5, 34)
+  );
+}
+
+body.theme-teal .login .input-box #btn {
+  background: linear-gradient(
+    180deg,
+    rgb(116, 199, 196),
+    rgb(52, 160, 164),
+    rgb(15, 90, 110),
+    rgb(5, 40, 60)
+  );
+}
+
+body.theme-gold .login .input-box #btn {
+  background: linear-gradient(
+    180deg,
+    rgb(242, 205, 139),
+    rgb(219, 163, 79),
+    rgb(150, 104, 39),
+    rgb(76, 52, 22)
+  );
+}
+
+body.theme-rose .login .input-box #btn {
+  background: linear-gradient(
+    180deg,
+    rgb(247, 178, 193),
+    rgb(223, 122, 160),
+    rgb(162, 70, 125),
+    rgb(93, 33, 78)
   );
 }
 
