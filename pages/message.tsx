@@ -51,15 +51,31 @@ const Message = () => {
     const getRandomId = async () => {
       try {
         const response = await fetch('/messages.json');
-        const json = await response.json();
-        const id = Math.floor(Math.random() * json.length);
+        const json: { message: string; note: string; feeling?: string }[] =
+          await response.json();
+
+        const storedFeeling = sessionStorage.getItem('feeling');
+
+        let pool = json;
+
+        if (storedFeeling) {
+          const filtered = json.filter(
+            (item) => item.feeling === storedFeeling
+          );
+
+          if (filtered.length > 0) {
+            pool = filtered;
+          }
+        }
+
+        const id = Math.floor(Math.random() * pool.length);
         const name = sessionStorage.getItem('nama') || 'Guest';
 
         setMessageData({
           destination: `To: ${name}`,
           nama: `Dear ${name},`,
-          message: json[id].message,
-          note: json[id].note,
+          message: pool[id].message,
+          note: pool[id].note,
         });
       } catch (error) {
         console.error('Failed to load messages:', error);

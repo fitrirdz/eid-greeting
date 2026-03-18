@@ -1,30 +1,77 @@
 [
   {
     "message": "Do you still remember those old jokes we used to laugh at? I hope those kind of memories can boost your mood when you're having a rough day.",
-    "note": "Take care~"
+    "note": "Take care~",
+    "feeling": "sad"
   },
   {
     "message": "I really like being around you. I hope your days will always be filled with blessings and you always find ways to be grateful.",
-    "note": "See you later~"
+    "note": "See you later~",
+    "feeling": "happy"
   },
   {
     "message": "Let's live in the present.",
-    "note": "Together we are stronger~"
+    "note": "Together we are stronger~",
+    "feeling": "mixed"
   },
   {
     "message": "As Dr. Lauren Fogel Mersy said: 'Deep breathing is our nervous system’s love language.'",
-    "note": "Keep breathing~"
+    "note": "Keep breathing~",
+    "feeling": "stressed"
   },
   {
     "message": "I'm sorry if I have ever left bruises on your body, or wounds in your heart, or even scars on your mind.",
-    "note": "I really am sorry~"
+    "note": "I really am sorry~",
+    "feeling": "sad"
   },
   {
     "message": "There is a saying that 'Vulnerability sounds like truth and feels like courage. Truth and courage aren’t always comfortable, but they're never weakness.'",
-    "note": "Keep up the good work~"
+    "note": "Keep up the good work~",
+    "feeling": "mixed"
   },
   {
     "message": "Somewhere, somehow, someone feels happy just knowing you're alive.",
-    "note": "Be and keep the genuine people around~"
+    "note": "Be and keep the genuine people around~",
+    "feeling": "tired"
+  },
+  {
+    "message": "Your smile today is a small celebration; may it grow into moments of peace and joy this Eid.",
+    "note": "Keep sharing your light~",
+    "feeling": "happy"
+  },
+  {
+    "message": "I love how you find joy in little things; may Allah multiply that happiness in unexpected ways.",
+    "note": "Stay joyful~",
+    "feeling": "happy"
+  },
+  {
+    "message": "It's okay if your heart feels heavy today; even gentle steps count as moving forward.",
+    "note": "One breath at a time~",
+    "feeling": "sad"
+  },
+  {
+    "message": "You’ve carried a lot this year; I hope this Eid gives you pockets of real rest.",
+    "note": "You deserve to pause~",
+    "feeling": "tired"
+  },
+  {
+    "message": "Even when you feel low on energy, your presence still matters more than you know.",
+    "note": "Please be kind to yourself~",
+    "feeling": "tired"
+  },
+  {
+    "message": "You don't have to have everything figured out this Eid; being here, now, is already enough.",
+    "note": "You are doing your best~",
+    "feeling": "stressed"
+  },
+  {
+    "message": "Let this Eid be a small reset button, not another deadline on your list.",
+    "note": "Slow down when you can~",
+    "feeling": "stressed"
+  },
+  {
+    "message": "It's normal to feel more than one thing at once; Eid can hold both your joy and your worries.",
+    "note": "All your feelings are valid~",
+    "feeling": "mixed"
   }
 ]

@@ -13,8 +13,11 @@ const cinzelDecorative = Cinzel_Decorative({
 export default function Home() {
   const openMessage = () => {
     const name = document.getElementById('name') as HTMLInputElement;
-    if (name?.value) {
-      sessionStorage.setItem('nama', name?.value);
+    const feeling = document.getElementById('feeling') as HTMLSelectElement;
+
+    if (name?.value && feeling?.value) {
+      sessionStorage.setItem('nama', name.value);
+      sessionStorage.setItem('feeling', feeling.value);
       window.location.href = 'message';
     }
   };
@@ -62,6 +65,19 @@ export default function Home() {
               id='name'
               onKeyUp={(e) => handleEnter(e)}
             />
+          </div>
+          <div className='input-box'>
+            <label htmlFor='feeling'>How is your feeling today?</label>
+            <select id='feeling' defaultValue=''>
+              <option value='' disabled>
+                Choose your feeling...
+              </option>
+              <option value='happy'>Happy &amp; grateful</option>
+              <option value='sad'>A bit sad</option>
+              <option value='tired'>Tired / low energy</option>
+              <option value='stressed'>Stressed / overwhelmed</option>
+              <option value='mixed'>Mixed / not sure</option>
+            </select>
           </div>
           <div className='input-box'>
             <input

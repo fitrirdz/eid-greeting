@@ -114,6 +114,29 @@ section {
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
+.login .input-box label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.8em;
+  font-weight: bold;
+  color: white;
+}
+
+.login .input-box select {
+  font-family: serif;
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: white;
+  outline: none;
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.15);
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
 input::placeholder {
   color: rgb(194, 194, 194);
 }
