@@ -11,10 +11,9 @@ section {
   align-items: center;
   width: 100%;
   min-height: 100vh;
-  height: auto;
+  height: 100vh;
   padding: 24px 16px;
-  overflow-x: hidden;
-  overflow-y: visible;
+  overflow: hidden;
 }
 
 .container {
@@ -315,10 +314,14 @@ body.theme-rose .login .input-box #btn {
 }
 
 /* Stars */
-html {
+html,
+body {
   height: 100%;
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   overflow: hidden;
+}
+
+html {
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
 }
 
 #stars {
